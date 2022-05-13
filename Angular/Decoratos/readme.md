@@ -10,3 +10,5 @@ There are different types of decorators
 * Property decorators
 * Method decorators
 * Parameter decorators
+
+Watch the following video

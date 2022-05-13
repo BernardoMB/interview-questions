@@ -1,10 +1,16 @@
+<style>
+    .question {
+        color: orange;
+        font-size: 15px;
+        // font-weight: bold;
+    }
+</style>
+
+<div class="question"></div>
+
 # Interview Questions
 
-
-
-**Q: What is an N-Tier architecture**
-
-**Answer**
+<div class="question">What is an N-Tier architecture</div>
 
 An N-tier architecture divides an application into logical layers and physical tiers. Layers are a way to separate responsibilities and manage dependencies. Each layer has a specific responsibility. A higher layer can use services in a lower layer, but not the other way around.
 
@@ -22,43 +28,48 @@ Pros:
 * Maintainance: Different people or teams can maintain different tiers. You might want to have a front end developer maintaining the presentation layer without touching the business logic or data.
 * Enhancements are easy: You could easily replace each tier or add more tiers on each level. For example, you could change the UI or add different presentation layers (This is specially usefull for mobile apps). 
 
-**Q: Explain all methods of dependency injection**
+<div class="question">Explain all methods of dependency injection</div>
 
-**Q:** What design patterns do you use
+<div class="question"></div>
+**Q: What design patterns do you use** 
 
-**Q:** What are the async await functions
+<div class="question"></div>
+**Q: What are the async await functions** 
 
-What is the difference between static and instance variables
+<div class="question"></div>
+**Q: What is the difference between static and instance variables**
 
+<div class="question"></div>
+**Cookie vs JWT authentication**
 
+<div class="question"></div>
+**When to use NoSQL rather than SQL**
 
-
-
-Cookie vs JWT authentication
-When to use NoSQL rather than SQL
-
-**Q:** REST vs SOAP
-
-**Answer**
+<div class="question"></div>
+**Q: REST vs SOAP** 
 
 https://www.wallarm.com/what/differences-soap-vs-rest#:~:text=While%20REST%20is%20faster%20than,Web%20Services%20Security%20as%20well.
 
+<div class="question"></div>
 How to Scale a Web API
+<div class="question"></div>
 How to monitor the App service apart from the logs
+<div class="question"></div>
 Indexing
+<div class="question"></div>
 I what case index based query will degrade query performance
+<div class="question"></div>
 Creating an Angular application is a design pattern
+<div class="question"></div>
 Service Locator Pattern
 
+<div class="question"></div>
 **Q:** Inversion of control principle
-
-**Answer**
 
 ## SOLID Principles
 
+<div class="question"></div>
 **Q:** State the SOLID principles
-
-**Answer**
 
 Principles of object oriented design
 
@@ -78,26 +89,32 @@ https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-f
 
 # .NET
 
+<div class="question"></div>
 **Q: Difference between .Net Framework and .Net Core**
-
-**Answer**
 
 .Net Framework is a re-usable design platform for software systems, which provides support for code libraries and various scripting languages. It is a software development platform for building and running Windows applications. The .Net framework is used to build desktop and web applications. It is also used to build websites, web services, and games.
 
- .Net Core is the latest version of .Net Framework. It is a cross-platform framework that works with Windows, Mac OS X, and Linux. It is used to create a wide variety of apps, including mobile, desktop, online, cloud, IotT, machile learning, microservices, games, and more. .Net Core is written from scratch to make it a modular, lightweight, fast, and cross-platform framework.
+.Net Core is the latest version of .Net Framework. It is a cross-platform framework that works with Windows, Mac OS X, and Linux. It is used to create a wide variety of apps, including mobile, desktop, online, cloud, IotT, machile learning, microservices, games, and more. .Net Core is written from scratch to make it a modular, lightweight, fast, and cross-platform framework.
 
+<div class="question"></div>
 **Q: What is a Delegate**
-
-**Answer**
 
 With delegates you can pass functions as parameters. Callbacks.
 
 # Angular
 
+<div class="question"></div>
 **Q: Difference Between Observable and Promise**
 
-**Answer**
+| Observable  | Promise |
+| ----------- | ----------- |
+|1. It emits multiple values over a period of time| 1. Emit only single value at a time |
+| 2. Observables are streams of events over time | 2. A Promise can only handle one event |
+| 3. Lazy. Observable is not called until we subscribe to the Observable | 3. Not Lazy. It call the service with out .then and .catch |
+| 4. Can be cancelled by using the ubsubscribe() method | 4. Not possible to be cancelled |
+| 5. Observable provides the map, tap, forEach, filter, reduce, retry, retryWhen operators | 5. It not provides any operators |
 
+<div class="question"></div>
 **Q: What is difference between NGXS and NgRx?**
 
 NGXS is a state management pattern + library for Angular. It acts as a single source of truth for your application's state. 
@@ -106,10 +123,12 @@ NgRx is also a state management tool. Is works with the actions, reducers, effec
 
 Both Typescript libraries mutate the state dispatching actions and you can subscribe to the actions and the changes to the state but NGXS has less boilerplate taking advantage of modern Typescript functions such as decorators and classes.
 
+<div class="question"></div>
 **Q: Parent and child component in angular**
 
 Easy
 
+<div class="question"></div>
 **Q: What is the sequence of Angular lifecycle hooks?**
 
 Angular can use lifecycle hook methods to tap into key events during the lifecycle of a component or directive to initialize new instances, initiate change detection when needed, respond to updates during change detection, and clean up before deletion of instances.
@@ -132,12 +151,16 @@ Angular calls the lifecycle hook methods in the following sequence after creatin
 
 * ``ngOnDestroy()``Called just before Angular destroys the component to avoid memory leaks by effective cleanup just before destroying the directives.
 
+<div class="question"></div>
 **Q: What Are Angular Directives?**
 
 Angular Directive is a TypeScript class which is declared as a @directive decorator.
 
 The directives allow you to attach behavior to DOM elements and the @directive decorator provide you an additional metadata that determines how directives should be processed, instantiated, and used at run-time.
 
+TODO: add video url for directives
+
+<div class="question"></div>
 What Are decorators?
 The Decorators are functions that modify JavaScript classes and it also used for attaching metadata to classes.
 
@@ -154,10 +177,12 @@ Directive decorator and metadata Properties -
 
 # Databases
 
+<div class="question"></div>
 **Q:** Difference of inner join and right join 
 
 **Answer**
 
+<div class="question"></div>
 **Q:** Whats a View in database context
 
 **Answer**
@@ -168,10 +193,12 @@ What is a trigger in DB context Trigger
 
 ## Store Procedures
 
+<div class="question"></div>
 **Q:** What is a Store Procedure
 
 **Answer**
 
+<div class="question"></div>
 **Q:** When or why use store procedures
 
 **Answer**
@@ -186,6 +213,7 @@ What is a trigger in DB context Trigger
 
 # Practical
 
+<div class="question"></div>
 If an employe can have multiple addresses, what 
 would be the right database design for this?
 

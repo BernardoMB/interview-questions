@@ -1,8 +1,9 @@
 <style>
     .question {
-        color: orange;
+        margin-bottom: 16px;
         font-size: 15px;
-        // font-weight: bold;
+        color: orange;
+        //font-weight: bold;
     }
 </style>
 
@@ -30,106 +31,134 @@ Pros:
 
 <div class="question">Explain all methods of dependency injection</div>
 
-<div class="question"></div>
-**Q: What design patterns do you use** 
+<div class="question">What design patterns do you use</div>
 
-<div class="question"></div>
-**Q: What are the async await functions** 
+<div class="question">What are the async await functions</div>
 
-<div class="question"></div>
-**Q: What is the difference between static and instance variables**
+<div class="question">What is the difference between static and instance variables</div>
 
-<div class="question"></div>
-**Cookie vs JWT authentication**
+<div class="question">Cookie vs JWT authentication</div>
 
-<div class="question"></div>
-**When to use NoSQL rather than SQL**
 
-<div class="question"></div>
-**Q: REST vs SOAP** 
+<div class="question">When to use NoSQL rather than SQL</div>
+
+
+<div class="question">REST vs SOAP</div>
 
 https://www.wallarm.com/what/differences-soap-vs-rest#:~:text=While%20REST%20is%20faster%20than,Web%20Services%20Security%20as%20well.
 
-<div class="question"></div>
-How to Scale a Web API
-<div class="question"></div>
-How to monitor the App service apart from the logs
-<div class="question"></div>
-Indexing
-<div class="question"></div>
-I what case index based query will degrade query performance
-<div class="question"></div>
-Creating an Angular application is a design pattern
-<div class="question"></div>
-Service Locator Pattern
+<div class="question">How to Scale a Web API</div>
 
-<div class="question"></div>
-**Q:** Inversion of control principle
+<div class="question">How to monitor the App service apart from the logs</div>
+
+<div class="question">Indexing</div>
+
+<div class="question">In what case index based query will degrade query performance</div>
+
+<div class="question">Is creating an Angular application is a design pattern?</div>
+
+<div class="question">Service Locator Pattern</div>
+
+<div class="question">Inversion of control principle</div>
+
+Let the program control the details I dont really care for
 
 ## SOLID Principles
 
-<div class="question"></div>
-**Q:** State the SOLID principles
+<div class="question">State the SOLID principles</div>
 
-Principles of object oriented design
+The SOLID principles are a design pattern that enlist five key guidelines in object-oriented programming that help create flexible, maintainable, and scalable software
 
-S: Single responsability principle. A class should ony have one reason to change. Ex. Area calculator class and area output class
+<table>
+    <thead>
+        <tr>
+            <th>Principle</th>
+            <th>Definition</th>
+            <th>Purpose</th>
+            <th>Pitfalls</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Single Responsibility Principle (SRP)</td>
+            <td>A class should ony have one reason to change.</td>
+            <td>Makes changes isolated, easy to test and reason about.</td>
+            <td>Hyper-decomposition. You probably don't need a full class to set a page/screen title.</td>
+        </tr>
+        <tr>
+            <td>Open/Closed Principle (OCP)</td>
+            <td>Classes should be closed for modification but open for extension.</td>
+            <td>Help prevent new features from breaking old ones.</td>
+            <td>"Closing" a module you own, maintain, and can safely extend can lead to unnecessary complexity, inheritance chains, LOC, and added binary/bundle size.</td>
+        </tr>
+        <tr>
+            <td>Liskov Substitution Priciple (LSP)</td>
+            <td>Child classes must be able to substitute parent classes without altering the correctness of the program.</td>
+            <td>Helps prevent code that looks correct from being incorrect.	</td>
+            <td>Over-reliance on LSP as a signal for correctness.</td>
+        </tr>
+        <tr>
+            <td>Interface Segregation Principle (ISP)</td>
+            <td>Clients should not be forced to depend on interfaces they do not use, promoting smaller, more specific interfaces.</td>
+            <td>Allows variable/function to accept to more types; Reduces boilerplate for using functions.</td>
+            <td>Requiring the smallest possible interface may conflict with intent of LSP.</td>
+        </tr>
+        <tr>
+            <td>Dependency Inversion Principl (DIP)</td>
+            <td>High-level modules should not depend on low-level modules; both should depend on an abstractions (interfaces) instead of actual implementations.</td>
+            <td>Makes more of the system reusable, swappable, and testable.</td>
+            <td>Over-inversion. Creating and "inverting" abstractions with no gain, adding complexity, making code harder to read and reason about.</td>
+        </tr>
+    </tbody>
+</table>
 
-O: Open-Closed principle. Every class should be extensible in order to change or expand the functionality
+For more detail, visit the following links: 
 
-L: 
+* https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+* https://softwareengineering.stackexchange.com/questions/447532/when-to-not-use-solid-principles
 
-I: Inversion of dependencies
-
-D: 
-
-For more detail, visit the following link: 
-
-https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
 
 # .NET
 
-<div class="question"></div>
-**Q: Difference between .Net Framework and .Net Core**
+<div class="question">Difference between .Net Framework and .Net Core</div>
+
 
 .Net Framework is a re-usable design platform for software systems, which provides support for code libraries and various scripting languages. It is a software development platform for building and running Windows applications. The .Net framework is used to build desktop and web applications. It is also used to build websites, web services, and games.
 
 .Net Core is the latest version of .Net Framework. It is a cross-platform framework that works with Windows, Mac OS X, and Linux. It is used to create a wide variety of apps, including mobile, desktop, online, cloud, IotT, machile learning, microservices, games, and more. .Net Core is written from scratch to make it a modular, lightweight, fast, and cross-platform framework.
 
-<div class="question"></div>
-**Q: What is a Delegate**
+<div class="question">What is a Delegate?</div>
 
 With delegates you can pass functions as parameters. Callbacks.
 
 # Angular
 
-<div class="question"></div>
-**Q: Difference Between Observable and Promise**
+<div class="question">Difference Between Observable and Promise</div>
+
 
 | Observable  | Promise |
 | ----------- | ----------- |
 |1. It emits multiple values over a period of time| 1. Emit only single value at a time |
 | 2. Observables are streams of events over time | 2. A Promise can only handle one event |
-| 3. Lazy. Observable is not called until we subscribe to the Observable | 3. Not Lazy. It call the service with out .then and .catch |
+| 3. Lazy. Observable is not called until we subscribe to the Observable | 3. Not Lazy. It call the service without .then and .catch |
 | 4. Can be cancelled by using the ubsubscribe() method | 4. Not possible to be cancelled |
 | 5. Observable provides the map, tap, forEach, filter, reduce, retry, retryWhen operators | 5. It not provides any operators |
 
-<div class="question"></div>
-**Q: What is difference between NGXS and NgRx?**
+<div class="question">What is difference between NGXS and NgRx?</div>
+
 
 NGXS is a state management pattern + library for Angular. It acts as a single source of truth for your application's state. 
 
-NgRx is also a state management tool. Is works with the actions, reducers, effects, selectos, and subscriptions to the observable of the state. State can be separated in feature modules in way that each feature module of the angular application can hava it's own state. 
+NgRx is also a state management tool. Is works with the actions, reducers, effects, selectos, and subscriptions to the observable of the state. State can be separated in feature modules in way that each feature module of the angular application can have it's own state. 
 
 Both Typescript libraries mutate the state dispatching actions and you can subscribe to the actions and the changes to the state but NGXS has less boilerplate taking advantage of modern Typescript functions such as decorators and classes.
 
-<div class="question"></div>
-**Q: Parent and child component in angular**
+<div class="question">Parent and child component in Angular</div>
 
 Easy
 
-<div class="question"></div>
-**Q: What is the sequence of Angular lifecycle hooks?**
+<div class="question">What is the sequence of Angular lifecycle hooks?</div>
+
 
 Angular can use lifecycle hook methods to tap into key events during the lifecycle of a component or directive to initialize new instances, initiate change detection when needed, respond to updates during change detection, and clean up before deletion of instances.
 
@@ -151,8 +180,7 @@ Angular calls the lifecycle hook methods in the following sequence after creatin
 
 * ``ngOnDestroy()``Called just before Angular destroys the component to avoid memory leaks by effective cleanup just before destroying the directives.
 
-<div class="question"></div>
-**Q: What Are Angular Directives?**
+<div class="question">What Are Angular Directives?</div>
 
 Angular Directive is a TypeScript class which is declared as a @directive decorator.
 
@@ -160,8 +188,8 @@ The directives allow you to attach behavior to DOM elements and the @directive d
 
 TODO: add video url for directives
 
-<div class="question"></div>
-What Are decorators?
+<div class="question">What Are decorators?</div>
+
 The Decorators are functions that modify JavaScript classes and it also used for attaching metadata to classes.
 
 Directive decorator and metadata Properties -
@@ -177,35 +205,31 @@ Directive decorator and metadata Properties -
 
 # Databases
 
-<div class="question"></div>
-**Q:** Difference of inner join and right join 
+<div class="question">Difference of inner join and right join</div>
 
-**Answer**
+https://www.youtube.com/watch?v=G3lJAxg1cy8
 
-<div class="question"></div>
-**Q:** Whats a View in database context
-
-**Answer**
+<div class="question">Whats a View in database context</div>
 
 A view does not form part of the physical schema: as a result set, it is a virtual table computed or collated dynamically from data in the database when access to that view is requested.
 
-What is a trigger in DB context Trigger
+<div class="question">What is a trigger in DB context Trigger?</div>
+
+A trigger in a database is a special type of stored procedure that automatically executes in response to specific events on a table or view. Triggers help enforce business rules, maintain data integrity, and automate tasks.
+
+Examples of triggers: BEFORE INSERT, AFTER INSERT, BEFORE UPDATE, AFTER UPDATE, AFTER UPDATE, BEFORE DELETE, AFTER DELETE.
 
 ## Store Procedures
 
-<div class="question"></div>
-**Q:** What is a Store Procedure
+<div class="question">What is a Store Procedure?</div>
 
-**Answer**
+A stored procedure in SQL is a set of precompiled SQL statements that are stored in the database and can be executed as a single unit. Stored procedures help automate tasks, improve efficiency, and reduce redundancy in database operations.
 
-<div class="question"></div>
-**Q:** When or why use store procedures
+<div class="question">When or why use store procedures</div>
 
-**Answer**
+* Security: If there is sensible query or procedure using the database data, then the program can just call the procedure without knowing what the process is. The code or any program will not have to have access to that sensible query or procedure. Users can execute procedures withou direct access to underlying tables.
 
-* Security: If there is sensible query or procedure using the database data, then the program can just call the procedure without knowing what the process is. The code or any program will not have to have access to that sensible query or procedure.
-
-* Networking: You can save time by just sending the instruction to the database server and the store procedure will work with the data without having to send data through the network. If one procedure or function needs data from more than one tale, then all data must be passed along through the network so the function that made the queries can work with the data and then compute whatever it needs to. With the store procedure the database server will have all the data it needs to work with it can just simply return the result of the procedure or computations needed.
+* Networking: You can save time by just sending the instruction to the database server and the store procedure will work with the data without having to send data through the network. If one procedure or function needs data from more than one table, then all data must be passed along through the network so the function that made the queries can work with the data and then compute whatever it needs to. With the store procedure the database server will have all the data it needs to work with it can just simply return the result of the procedure or computations needed.
 
 * Scalability: If multiple programs interact with the database and the database structure changes, then each of the programs will have to adapt for that change in the structure. In contrast if we have an store procedure we will just have to modify the store procedure and the other programs can remain with no changes calling that same store procedure.
 
@@ -213,10 +237,75 @@ What is a trigger in DB context Trigger
 
 # Practical
 
-<div class="question"></div>
-If an employe can have multiple addresses, what 
-would be the right database design for this?
+<div class="question">If an employe can have multiple addresses, what would be the right database design for this?</div>
 
-**Q:**
+**Employees**
 
-**Answer**
+<table>
+    <thead>
+        <tr>
+            <th>Column</th>
+            <th>Data Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>EmployeeID</td>
+            <td>INT (PK)</td>
+            <td>Unique Identifier for each employee</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>VARCHAR</td>
+            <td>Employee's full name</td>
+        </tr>
+        <tr>
+            <td>OtherDetails</td>
+            <td>TEXT</td>
+            <td>Any additional employee details</td>
+        </tr>
+    </tbody>
+</table>
+
+**Addresses**
+
+<table>
+    <thead>
+        <th>Column</th>
+        <th>Data Type</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>AddressID</td>
+            <td>INT (PK)</td>
+            <td>Unique identifier for each address</td>
+        </tr>
+        <tr>
+            <td>EmployeeID</td>
+            <td>INT (FK)</td>
+            <td>Links to EMployeeID in Employees table</td>
+        </tr>
+        <tr>
+            <td>Street</td>
+            <td>VARCHAR</td>
+            <td>Street name and number</td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>VARCHAR</td>
+            <td>City name</td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>VARCHAR</td>
+            <td>State or region</td>
+        </tr>
+        <tr>
+            <td>ZipCode</td>
+            <td>VARCHAR</td>
+            <td>Postal code</td>
+        </tr>
+    </tbody>
+</table>

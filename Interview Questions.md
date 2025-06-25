@@ -39,6 +39,48 @@ Pros:
 
 <div class="question">Cookie vs JWT authentication</div>
 
+<table>
+    <thead>
+        <tr>
+            <th>Method</th>
+            <th>How it works</th>
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cookie-Based Authentication</td>
+            <td>After login, the server creates a session and stores it in memory or a database. A session ID is sent to the client as a cookie.</td>
+            <td>
+                <ul>
+                    <li>Built-in browser support (cookies are sent automatically with each request).</li>
+                    <li>Easier to implement CSRF protection using SameSite, HttpOnly, and Secure flags.</li>
+                    <li>Server-side session control (you can revoke sessions anytime).</li>
+                </ul>
+            </td>
+            <td>
+                <li>Doesn’t scale well for distributed systems unless you use sticky sessions or external session stores.</li>
+                <li>Mostly browser-centric; less ideal for mobile or third-party API clients.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>JWT-Based Authentication</td>
+            <td>After login, the server issues a signed token (JWT) containing user info. The client stores it (usually in localStorage) and sends it with each request (typically in the Authorization header).
+            </td>
+            <td>
+                <li>Stateless and scalable—no need to store sessions on the server.</li>
+                <li>Works well across platforms (web, mobile, APIs).</li>
+                <li>Easy to implement role-based access control using token claims.</li>
+            </td>
+            <td>
+                <li>Harder to revoke tokens before they expire unless you implement a blacklist.</li>
+                <li>Vulnerable to XSS if stored insecurely.</li>
+                <li>Larger payloads can increase request size.</li>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 <div class="question">When to use NoSQL rather than SQL</div>
 
